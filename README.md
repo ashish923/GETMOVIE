@@ -7,25 +7,32 @@ The following function USER AND AdMIN can perform .
 
 
 USER:
+<br>
 HOME PAGE: This module is used to give an Introduction of website .
+<br>
 SIGN UP : User can sign up using their Name, Email Id, and password through this page.
+<br>
 LOGIN : User can login by using their email id and password.
+<br>
 HOME : This page contains an overview of various kinds of movies.
-DOWNLOAD AND WATCH : USER after login can watch or download any movies from 
-this site. 
+<br>
+DOWNLOAD AND WATCH : USER after login can watch or download any movies from this site. 
+<br>
 LOG-OUT : User can sign out by this.
-
-
+<br>
+<br>
 ADMIN:
+<br>
 LOGIN : Admin can login using Email ID and Password.
-ADMIN PAGE : This page contains admin functionality menu from there he can add movie 
-that will add to the HOME PAGE, similarly when ADMIN deletes or modify any movie 
-that’s result will be reflects to the the HOME PAGE. 
-ADMIN can also see the detail of any user .
-UPLOAD : ADMIN can add movies details that will add to the HOME PAGE.
-EDIT : ADMIN can modify or change the detail of movies that will add to the HOME 
+<br>ADMIN PAGE : This page contains admin functionality menu from there he can add movie that will add to the HOME PAGE, similarly when ADMIN deletes or modify any movie 
+<br>that’s result will be reflects to the the HOME PAGE. 
+<br>ADMIN can also see the detail of any user .
+<br>UPLOAD : ADMIN can add movies details that will add to the HOME PAGE.
+ 
+<br>EDIT : ADMIN can modify or change the detail of movies that will add to the HOME 
 PAGE.
-DELETE : ADMIN can delete movie that will remove to the HOME PAGE.
+ 
+<br>DELETE : ADMIN can delete movie that will remove to the HOME PAGE.
 
 TECH USED :
 The GUI (Graphical user Interface) of GET MOVIE
