@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  
+ 
+  <div class="row">
+    
+      <div class="col-lg-3  col-md-4 col-sm-8 movie-card">
+          <img src="{{ url_for('static', filename='movieimage/' + movies.image_file) }}" class="img-thumbnail">
+          
+              <a href="/movies/{{movies.m_id}}"> {{movies.movie_title}} </a>      
+      
+      </div>
+    
+     
+      
+  </div>
+</div>
+
+
+
+<!-- Button to Open the Modal -->
+
+
+{% endblock content %}

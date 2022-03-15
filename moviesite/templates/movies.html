@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <h3 class="text-center"> Movies Detail</h3>
+    <div class="row">
+        <div class=" col-md-4 movie-card">
+            <img src="{{ url_for('static', filename='movieimage/' +image_path) }}" class="img-thumbnail">
+         
+        </div>
+        <div class=" col-md-8 ">
+            
+            <dl class="row" mt-10>
+                <dt class="col-sm-3 ">Movie Title </dt>
+                <dd class="col-sm-9  "><h1>{{movie_title}}</h1></dd>
+              <br><br><br>
+                <dt class="col-sm-3">Description</dt>
+                <dd class="col-sm-9">
+                  <p>{{movie_desc}}</p>
+                  <dt class="col-sm-3 ">Movie genre </dt>
+                  <dd class="col-sm-9 ">
+                  {%if ms.action%}
+                  action &nbsp; 
+                  {%endif%}
+                  {%if ms.suspense%}
+                  suspense &nbsp; 
+                  {%endif%}
+                  {%if ms.adventure%}
+                  adventure &nbsp; 
+                  {%endif%}
+                  {%if ms.horror%}
+                  horror &nbsp; 
+                  {%endif%}
+                  {%if ms.comedy%}
+                  comedy &nbsp; 
+                  {%endif%}
+                  {%if ms.scifci%}
+                  scifci &nbsp; 
+                  
+                  {%endif%}
+                  
+                    
+
+                 
+                 </dd>
+                 <br><br><br><br><br><br> 
+                <a class="btn btn-outline-info " href="https://drive.google.com/uc?export=download&id={{movie_link}}">Download</a> &nbsp;&nbsp;&nbsp;    
+                
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal">
+                    Watch
+                  </button>
+        </div>
+</div>
+</div>
+
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+       
+  
+    
+      
+        <iframe src="https://drive.google.com/file/d/{{movie_link}}/preview" width="640" height="480"></iframe>
+
+  
+        
+  
+   
+  
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

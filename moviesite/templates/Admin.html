@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+  <h2 style="text-align: center;">Movies Detail</h2>
+  <a class="btn btn-outline-info" href="{{ url_for('Upload') }}">Upload Movie</a>
+  <br>
+
+    <table class="table table-bordered pt-10">
+        <thead>
+          <tr>
+            <th>Movie.id</th>
+            <th>movie_title</th>
+            <th>Movie_desc</th>
+            <th>option</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for movie in movies %}
+          <tr>
+              <td>{{movie.m_id}}</td>
+              <td>{{movie.movie_title}}</td>
+              <td>{{movie.movie_desc}}</td>
+              <td>
+                <a href="{{ url_for('update_movie', m_id=movie.m_id) }}">  Edit</a>      
+                <a href="{{ url_for('delete_movie', m_id=movie.m_id) }}">Delete  </a>      
+
+              </td>
+              
+        </tr>
+          {% endfor  %}
+        </tbody>
+      </table>
+</div>
+{% endblock  %}
